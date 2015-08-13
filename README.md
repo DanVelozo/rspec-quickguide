@@ -1,4 +1,4 @@
-### Depot
+### RSpec
 
 Projeto para estudos.
 
