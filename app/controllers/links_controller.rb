@@ -1,5 +1,6 @@
 class LinksController < ApplicationController
   def new
+    @link = Link.new
   end
 
   def create
@@ -14,5 +15,6 @@ class LinksController < ApplicationController
   end
 
   def show
+    @link = Link.find(params[:id])
   end
 end

@@ -8,7 +8,11 @@ describe 'Create link' do
     click_button 'Shorten'
   end
 
-  it 'displays long url'
+  it 'displays long url' do
+    expect(page).to have_content('http://google.com')
+  end
 
-  it 'displays shortened url'
+  it 'displays shortened url' do
+    expect(page.body).to match(%r[httpp://www\.example.com/[a-zA-z0-9]+])
+  end
 end
